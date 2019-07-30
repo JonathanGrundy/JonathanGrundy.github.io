@@ -1,0 +1,50 @@
+body {
+	margin: 0;
+}
+.app {
+	background-image: url(backgroundimage.jpeg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	position: relative;
+}
+h2 {
+	text-align: center;
+	width: 100%;
+	font-family: "Permanent Marker", cursive;
+	color: black;
+	text-shadow: 2px 2px #888888;
+	transition: all 1s;
+	cursor: pointer;
+}
+h2:hover {
+	font-size: 30px;
+}
+a:visited {
+	color: black;
+}
+p {
+	text-align: center;
+	width: 100%;
+	font-family: "Permanent Marker", cursive;
+	color: black;
+	text-shadow: 2px 2px #888888;
+	transition: all 1s;
+}
+.center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 90vw;
+	animation: slide-up 1s;
+}
+@keyframes slide-up {
+	0% {
+		top: -100%;
+	}
+	100% {
+		top: 50%;
+	}
+}
